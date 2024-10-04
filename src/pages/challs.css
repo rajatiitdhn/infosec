@@ -1,0 +1,81 @@
+/* Reset default styles */
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'ubuntu';
+    line-height: 1.6;
+    background-color: #f0f0f0;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+    /* background-color: #f0f0f0; */
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+main {
+    padding: 40px 0;
+}
+
+.category {
+    margin-bottom: 40px;
+}
+
+.category h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: whitesmoke;
+}
+
+.challenges {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.challenge {
+    background-color: orange;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+.challenge h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.challenge p {
+    color: #666;
+}
+
+.challenge a {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.challenge a:hover {
+    background-color: #555;
+}
