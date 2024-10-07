@@ -8,7 +8,7 @@
 }
 
 body {
-    font-family: 'ubuntu';
+    font-family: 'Ubuntu', sans-serif; /* Added fallback font */
     line-height: 1.6;
     background-color: #f0f0f0;
 }
@@ -16,7 +16,6 @@ body {
 .container {
     margin: 0 auto;
     padding: 0 20px;
-    /* background-color: #f0f0f0; */
 }
 
 header {
@@ -52,7 +51,7 @@ main {
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 .challenge h3 {
@@ -78,4 +77,53 @@ main {
 
 .challenge a:hover {
     background-color: #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem; /* Reduce header font size for smaller screens */
+    }
+
+    .category h2 {
+        font-size: 1.8rem; /* Reduce category title font size */
+    }
+
+    .challenge {
+        padding: 15px; /* Reduce padding for challenge boxes */
+    }
+
+    .challenge h3 {
+        font-size: 1.3rem; /* Reduce challenge title font size */
+    }
+
+    .challenge a {
+        padding: 6px 12px; /* Reduce padding for buttons */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem; /* Further reduce header font size */
+    }
+
+    .category h2 {
+        font-size: 1.5rem; /* Further reduce category title font size */
+    }
+
+    .challenges {
+        gap: 15px; /* Reduce gap between challenge boxes */
+    }
+
+    .challenge {
+        padding: 10px; /* Further reduce padding for challenge boxes */
+    }
+
+    .challenge h3 {
+        font-size: 1.2rem; /* Further reduce challenge title font size */
+    }
+
+    .challenge a {
+        padding: 5px 10px; /* Further reduce padding for buttons */
+    }
 }
